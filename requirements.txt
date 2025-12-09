@@ -5,3 +5,5 @@ pandas
 catboost
 requests
 pytest
+mlflow
+httpx
