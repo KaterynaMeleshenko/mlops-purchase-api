@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/kateryna/Documents/mlops-purchase-api/mlruns/835074960605892746/991ecc6d30064adeac36b7569033f0bc/artifacts
+end_time: 1765116175304
+entry_point_name: ''
+experiment_id: '835074960605892746'
+lifecycle_stage: active
+run_id: 991ecc6d30064adeac36b7569033f0bc
+run_name: bold-whale-448
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765116171047
+status: 3
+tags: []
+user_id: kateryna

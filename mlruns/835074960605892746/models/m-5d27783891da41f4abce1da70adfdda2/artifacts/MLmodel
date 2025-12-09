@@ -1,0 +1,22 @@
+artifact_path: file:///Users/kateryna/Documents/mlops-purchase-api/mlruns/835074960605892746/models/m-5d27783891da41f4abce1da70adfdda2/artifacts
+flavors:
+  catboost:
+    catboost_version: 1.2.8
+    code: null
+    data: model.cb
+    model_type: CatBoostClassifier
+    save_format: cbm
+  python_function:
+    data: model.cb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.catboost
+    python_version: 3.9.6
+mlflow_version: 3.1.4
+model_id: m-5d27783891da41f4abce1da70adfdda2
+model_size_bytes: 566896
+model_uuid: m-5d27783891da41f4abce1da70adfdda2
+prompts: null
+run_id: 991ecc6d30064adeac36b7569033f0bc
+utc_time_created: '2025-12-07 14:02:53.497502'

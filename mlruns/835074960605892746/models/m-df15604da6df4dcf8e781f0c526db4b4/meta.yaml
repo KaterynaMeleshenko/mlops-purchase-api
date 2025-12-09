@@ -1,0 +1,10 @@
+artifact_location: file:///Users/kateryna/Documents/mlops-purchase-api/mlruns/835074960605892746/models/m-df15604da6df4dcf8e781f0c526db4b4/artifacts
+creation_timestamp: 1765128376490
+experiment_id: '835074960605892746'
+last_updated_timestamp: 1765128377994
+model_id: m-df15604da6df4dcf8e781f0c526db4b4
+model_type: null
+name: catboost-model
+source_run_id: df75cd2173f04f58b4bd63c4d07db308
+status: 2
+status_message: null

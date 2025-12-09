@@ -1,0 +1,6 @@
+artifact_location: file:///Users/kateryna/Documents/mlops-purchase-api/mlruns/835074960605892746
+creation_time: 1765116170972
+experiment_id: '835074960605892746'
+last_update_time: 1765116170972
+lifecycle_stage: active
+name: customer_purchase_catboost
