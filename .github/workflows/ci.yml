@@ -1,0 +1,49 @@
+name: CI for ML API
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run unit tests
+      run: |
+        pytest
+
+    - name: Build Docker image
+      run: |
+        docker build -t purchase-api .
+
+    - name: Run Docker container
+      run: |
+        docker run -d -p 8000:8000 --name test-api purchase-api
+
+    - name: Wait for API to start
+      run: sleep 10
+
+    - name: Health check
+      run: |
+        curl -f http://localhost:8000/health
+
+    - name: Stop container
+      run: |
+        docker stop test-api
+        docker rm test-api

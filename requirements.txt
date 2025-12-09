@@ -3,3 +3,5 @@ uvicorn
 pydantic
 pandas
 catboost
+requests
+pytest
